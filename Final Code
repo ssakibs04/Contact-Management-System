@@ -1,0 +1,63 @@
+#include <iostream>
+#include<string.h>
+using namespace std;
+class MyPhBook
+{
+private:
+    string name;
+    string area;
+    string phNum;
+public:
+    void setName(string n)
+    {
+        name=n;
+    }
+    void setArea(string a)
+    {
+        area=a;
+    }
+    void setNum(string ph)
+    {
+        phNum=ph;
+    }
+    void displayBook()
+    {
+        cout<<"Name = "<<name<<endl;
+        cout<<"Area = "<<area<<endl;
+        cout<<"Mobile = "<<phNum<<endl;
+        cout<<"*******************************"<<endl;
+    }
+};
+
+int main()
+{
+    MyPhBook c1,c2,c3,c4,c5;
+
+    c1.setName("Kabir Ahmed");
+    c1.setArea("Gulshan");
+    c1.setNum("018252633");
+
+    c2.setName("Shahriar Khan");
+    c2.setArea("Kalabagan");
+    c2.setNum("017762633");
+
+    c3.setName("Almas Kabir");
+    c3.setArea("Lalmatia");
+    c3.setNum("015902633");
+
+    c4.setName("Humayun Chowdhury");
+    c4.setArea("Dhanmondi");
+    c4.setNum("013909033");
+
+    c5.setName("Raihan Yusuf");
+    c5.setArea("Banani");
+    c5.setNum("018902033");
+
+    c1.displayBook();
+    c2.displayBook();
+    c3.displayBook();
+    c4.displayBook();
+    c5.displayBook();
+
+    return 0;
+}
